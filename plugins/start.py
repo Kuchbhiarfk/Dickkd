@@ -21,7 +21,7 @@ from helper_func import subscribed, encode_link, decode_link, get_messages
 from database.database import add_user, del_user, full_userbase, present_user, add_special_message, remove_special_message, get_special_messages, get_all_special_messages, add_scheduled_broadcast, get_active_scheduled_broadcasts, deactivate_scheduled_broadcast, delete_scheduled_broadcast, get_schedule_by_id, update_schedule_start_time
 
 # Encryption keys
-ENCRYPTION_KEY = bytes.fromhex('0123456789abcdef0123456789abcdef')  # 32 bytes
+ENCRYPTION_KEY = bytes.fromhex('0123456789abcdef0123456789abcdeff')  # 32 bytes
 IV = bytes.fromhex('abcdef9876543210')  # 16 bytes
 
 # Different delete times for different access types

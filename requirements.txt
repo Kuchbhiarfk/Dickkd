@@ -7,3 +7,4 @@ dnspython
 aiohttp
 humanize
 pycryptodome
+cryptography

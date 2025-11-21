@@ -72,7 +72,7 @@ def decrypt_json_item(encrypted_str: str) -> dict:
     json_str = unpad(padded_data, AES.block_size).decode('utf-8')
     return json.loads(json_str)
 
-async def download_and_decrypt_json(client: Client, msg) -> tuple[str, str]:
+async def download_and_decrypt_json(client: Client, msg) -> Tuple[str, str]:
     if not msg.document or not msg.document.file_name.endswith('.json'):
         raise ValueError("Not a JSON file")
     path = await client.download_media(msg)
